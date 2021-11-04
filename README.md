@@ -5,3 +5,5 @@
 [gitlog.txt](https://github.com/lina-ova/ot-harjoitystyo/blob/master/laskarit/viikko1/gitlog.txt)
 
 [komentorivi.txt](https://github.com/lina-ova/ot-harjoitystyo/blob/master/laskarit/viikko1/komentorivi.txt)
+
+<p>joku muutos </p>S
