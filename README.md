@@ -6,5 +6,3 @@
 
 [komentorivi.txt](https://github.com/lina-ova/ot-harjoitystyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
-<p>joku  </p>
-
