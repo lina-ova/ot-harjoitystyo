@@ -6,3 +6,6 @@
 
 [komentorivi.txt](https://github.com/lina-ova/ot-harjoitystyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
+##Dokumentaatio
+[Tuntikirjanpito](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+[Vaatimusmäärittely](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/vaatimusmaarittelu.md)
