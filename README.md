@@ -1,11 +1,42 @@
-<h1>Ohjelmistotekniikka, harjoitustyö</h1>
-<h2>Tehtävät</h2>
-<h3>Viikko 1</h3>
+# Lihikäärmien maailma
 
-[gitlog.txt](https://github.com/lina-ova/ot-harjoitystyo/blob/master/laskarit/viikko1/gitlog.txt)
+Sovellus on yhden pelaajan peli
 
-[komentorivi.txt](https://github.com/lina-ova/ot-harjoitystyo/blob/master/laskarit/viikko1/komentorivi.txt)
+## Dokumentaatio
 
-##Dokumentaatio
-[Tuntikirjanpito](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 [Vaatimusmäärittely](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/vaatimusmaarittelu.md)
+
+[Tuntikirjanpito](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+## Asennus
+
+1. Asenna riippuvuudet komennolla:
+
+>poetry install
+
+2. Käynistä sovellus komennolla: 
+
+> poetry run invoke start
+
+## Koentorivitoiminnot
+
+### Ohjelmanan suorittaminen
+
+Ohjelman pystyy suorittamaan komennolla:
+
+> poetry run invoke start 
+
+### Testaus
+
+Testit suoritetaan komennolla:
+
+> poetry run invoke test
+
+### Testikattavuus
+
+Testikattavuusraportin voi generoida komennolla: 
+
+>poetry run invoke coverage-report
+
+Raporti generoituu **htmlcov**-hakemistoon
+

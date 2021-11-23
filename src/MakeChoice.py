@@ -1,7 +1,5 @@
 from tkinter import *
 
-import time
-
 class MakeChoiceView:
     def __init__(self, root,show_result):
         self._root = root

@@ -3,7 +3,6 @@ from HelloView import HelloView
 from play import PlayView
 from MakeChoice import MakeChoiceView
 from ResultView import ResultView
-import time
 
 class UI:
     def __init__(self, root):
@@ -59,7 +58,7 @@ class UI:
             self._show_result_view)
 
         self._current_view.pack()
-        #time.sleep(2)
+        
 
 
     def _show_result_view(self):
