@@ -1,11 +1,12 @@
 from tkinter import *
 
 class PlayView:
-    def __init__(self, root, handle_hello, make_choice):
+    def __init__(self, root, handle_hello, make_choice, treasure):
         self._root = root
         self._handle_hello = handle_hello
         self._frame = None
         self._make_choice= make_choice
+        self._treasure=treasure
 
         self._initialize()
 
@@ -32,6 +33,8 @@ class PlayView:
             text='Cage 2',
             command=self._make_choice
         )
+        treasure_label=Label(master=self._frame, 
+        text='Treasures currently='+str(self._treasure))
         button = Button(
             master=self._frame,
             text="Pause the game",
@@ -40,7 +43,8 @@ class PlayView:
         text_label.grid(row=0,column=1,padx=10, pady=10)
         cage1_button.grid(row=1, column=0,padx=50, pady=50)
         cage2_button.grid(row=1, column=2,padx=50,pady=50)
-        button.grid(row=2, column=1, padx=10, pady=10)
+        treasure_label.grid(row=2, column=1, padx=10, pady=10)
+        button.grid(row=3, column=1, padx=10, pady=10)
 
 
 

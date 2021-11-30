@@ -7,6 +7,7 @@ Sovellus on yhden pelaajan peli
 [Vaatimusmäärittely](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/vaatimusmaarittelu.md)
 
 [Tuntikirjanpito](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+[Testaus]()
 
 ## Asennus
 

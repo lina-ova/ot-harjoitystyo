@@ -1,10 +1,11 @@
 from tkinter import *
 
 class MakeChoiceView:
-    def __init__(self, root,show_result):
+    def __init__(self, root,show_result, treasure):
         self._root = root
         self._frame = None
         self._handle_show_result=show_result
+        self._treasure=treasure
         self._initialize()
 
     def pack(self):
@@ -21,5 +22,8 @@ class MakeChoiceView:
         button = Button(master=self._frame,
             text='Show the result',
             command=self._handle_show_result)
+        treasure_label=Label(master=self._frame,
+        text='Treasures currently='+str(self._treasure))
         label.grid(padx=10, pady=10)
+        treasure_label.grid(padx=10,pady=10)
         button.grid(padx=10,pady=10)

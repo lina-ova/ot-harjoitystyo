@@ -1,10 +1,11 @@
 from tkinter import ttk, constants
 
 class HelloView:
-    def __init__(self, root, handle_play):
+    def __init__(self, root, handle_play, treasure):
         self._root = root
         self._handle_play = handle_play
         self._frame = None
+        self._treasure=treasure
 
         self._initialize()
 
