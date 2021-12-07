@@ -21,7 +21,7 @@ class PlayView:
         text_label=Label(
             master=self._frame, 
             text='You are in a land full of dragons. In front of you,\nyou see two caves. In one cave, the dragon is friendly\nand will share his treasure with you. The other dragon\nis greedy and hungry, and will eat you on sight.\nWhich cave will you go into?',
-            font=('Helvetica', 24))
+            )
     
         cage1_button=Button(
             master=self._frame,
@@ -34,7 +34,7 @@ class PlayView:
             command=self._make_choice
         )
         treasure_label=Label(master=self._frame, 
-        text='Treasures currently='+str(self._treasure))
+        text='Treasures currently: '+str(self._treasure))
         button = Button(
             master=self._frame,
             text="Pause the game",

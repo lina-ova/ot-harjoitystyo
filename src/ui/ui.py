@@ -134,7 +134,8 @@ class UI:
             self._root,
             riddle,
             answer,
-            self._check_answers
+            self._handle_play,
+            self._handle_hello
         )
         self._current_view.pack()
     
@@ -143,7 +144,6 @@ class UI:
             self._handle_surviving
        )
     def _check_answers(self, correct, users):
-        
         check=Cheking(correct, users, self._handle_hello, self._handle_play)
 
 
