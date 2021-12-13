@@ -9,7 +9,7 @@ INSERT INTO riddles(riddle, answer) VALUES(
 );
 
 INSERT INTO riddles(riddle, answer) VALUES(
-    'I’m tall when I’m young, and I’m short when I’m old. What am I?',
+    'I am tall when I am young, and I am short when I am old. What am I?',
     'candle'
 );
 
@@ -19,7 +19,7 @@ INSERT INTO riddles(riddle, answer) VALUES(
 );
 
 INSERT INTO riddles(riddle, answer) VALUES(
-    'What is always in front of you but can’t be seen?',
+    'What is always in front of you but can not be seen?',
     'future'
 );
 
@@ -49,7 +49,7 @@ INSERT INTO riddles(riddle, answer) VALUES(
 );
 
 INSERT INTO riddles(riddle, answer) VALUES(
-    'What can’t talk but will reply when spoken to?',
+    "What can not talk but will reply when spoken to?",
     'echo'
 );
 
@@ -212,4 +212,51 @@ INSERT INTO riddles(riddle, answer) VALUES(
     'What sometimes freezes after it has been heated up?',
     'windows'
 );
-
+INSERT INTO riddles(riddle, answer) VALUES(
+    '100+15?',
+    '115'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    '5*5?',
+    '25'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    '10*10?',
+    '100'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    '5x+5=25\n x=?',
+    '4'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    '3-3=?',
+    '0'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    '12+8=?',
+    '20'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    'x*x=100\n x=?',
+    '10'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    'x*x=256\n x=?',
+    '16'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    'x*x=169\n x=?',
+    '13'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    'x*x=9\n x=?',
+    '3'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    '11-7?',
+    '4'
+);
+INSERT INTO riddles(riddle, answer) VALUES(
+    '1+1?',
+    '2'
+);

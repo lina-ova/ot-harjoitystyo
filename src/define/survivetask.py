@@ -1,13 +1,14 @@
-#from database_connection import get_database_connection
+from database_connection import get_database_connection
 import random
 
 class SurviveTask:
-    def __init__(self, connection, handle_survive_view):
-        self._connection=connection
-        self._open_survive_view=handle_survive_view
+    def __init__(self):
+        self._connection=get_database_connection()
+        self._riddle=None
+        self._answer=None
         self._get_task()
     def randomize_task(self):
-        task_id=random.randint(1,15)
+        task_id=random.randint(1,54)
         return str(task_id)
 
     def _get_from_database(self, task_id):
@@ -19,11 +20,12 @@ class SurviveTask:
     def _get_task(self):
         task_id=self.randomize_task()
         task_and_answer=self._get_from_database(task_id)
-        riddle=task_and_answer[0]
-        answer=task_and_answer[1]
-        self._handle_survive_view(riddle, answer)
+        self._riddle=task_and_answer[0]
+        self._answer=task_and_answer[1]
 
-    def _handle_survive_view(self, riddle, answer):
-        pass
-        self._open_survive_view(riddle, answer)
+    def riddle(self):
+        return self._riddle
+    
+    def answer(self):
+        return self._answer
 

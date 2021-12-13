@@ -6,6 +6,8 @@ def drop_tables(connection):
     cursor.execute('''
         DROP TABLE if exists riddles;
     ''')
+    cursor.execute('''
+    DROP TABLE if exists hunters;''')
 
     connection.commit()
 
@@ -19,6 +21,13 @@ def create_riddles(connection):
 
     connection.commit()
 
+def create_history(connection):
+    cursor=connection.cursor()
+    with open('data/hunters.sql', 'r') as hunters_file:
+        sql_sqript=hunters_file.read()
+    cursor.executescript(sql_sqript)
+    connection.commit()
+
 
 
 def initialize_database():
@@ -26,6 +35,7 @@ def initialize_database():
 
     drop_tables(connection)
     create_riddles(connection)
+    create_history(connection)
 
 
 if __name__ == "__main__":
