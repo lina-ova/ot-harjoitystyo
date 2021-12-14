@@ -1,10 +1,14 @@
 # Lohikäärmien maailma
 
-Sovellus on yhden pelaajan peli
+Sovellus on yhden pelaajan peli. Sovellus on Lohikäärmien maailma peli. Tässä pelissa pelaaja on maassa, joka on täynnä lohikäärmeitä ja aarteita. Kaikki lohikäärmeet asuvat luolissa ja niillä on suuria kasoja aarteita. Pelaaja kerää aarteet
 
 ## Dokumentaatio
 
+[Käyttöohje](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/kayttoohje.md)
+
 [Vaatimusmäärittely](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/vaatimusmaarittelu.md)
+
+[Arkitehtuurikuvaus](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/arkitehtuuri.md)
 
 [Tuntikirjanpito](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
@@ -43,7 +47,7 @@ poetry run invoke start
 Testit suoritetaan komennolla:
 
 ```bash
-> poetry run invoke test
+poetry run invoke test
 ```
 
 ### Testikattavuus
