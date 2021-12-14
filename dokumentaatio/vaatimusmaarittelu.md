@@ -18,26 +18,36 @@ Sovellus aukeaa **Aloita peli** näkymään josta pelaaja voi aloittaa pelin
 
 ## Perusversion tarjoama toiminnallisuus
 
-- Pelaaja voi aloittaa pelin
+- Pelaaja voi aloittaa pelin (tehty)
 
-- Pelissa pelaaja voi valita kahden luolan välissä
+- Pelissa pelaaja voi valita kahden luolan välissä (tehty)
 
-- Jos pelaaja tapaa ystävällisen lohikäärmeen hän siirtyy seuraavaan kahden luolan valintaan
+- Jos pelaaja tapaa ystävällisen lohikäärmeen hän siirtyy seuraavaan kahden luolan valintaan (tehty)
 
-- Jos pelaaja tapaa nälkäisen ja vihaisen lohikäärmeen, hän tulee syödyksi ja peli loppuu
+- Jos pelaaja tapaa nälkäisen ja vihaisen lohikäärmeen, hän tulee syödyksi (tehty)
 
-- Pelaaja voi sulkea pelin
+- Pelaaja voi sulkea pelin (tehty)
 
 ## Jatkokehitysideoita
 
 Perusversion jälkeen peli täydennetään esim seuraavilla toiminnallisuuksilla:
 
-- Jos pelaaja tapaa ystävällisin lohikäärmeen, hän saa osan aarteista.
+- Jos pelaaja tapaa ystävällisin lohikäärmeen, hän saa osan aarteista. (tehty)
 
-- Nälkäinen lohikäärme voi olla syömättä pelaaja, sen sijaan hän vie osan pelaajan tähän mennessä kerätyistä aartesta.
+- Nälkäinen lohikäärme voi olla syömättä pelaaja, sen sijaan hän vie osan pelaajan tähän mennessä kerätyistä aartesta. (tehty)
 
-- Nälkäinen lohikäärme voi tarjota pelaajalle ensin tehtävän ratkaistettavksi, jos pelaaja vastaa väärin, lohikäärme syö sen tai vie osan rahoista
+- Jos pelaajalla ei ole sen verran aarteita, kuin mitä nälkäinen lohikäärme haluaa, hän tulee syödyksi (tämä lasketaan automaattisesti) (tehty)
+
+- Kun nälkäinen lohikäärme syö pelaajan, pelaajalle tarjotaan 2 vaihtoehtoa: kuolla tai yrittää pelastua
+
+- Jos pelaaja päättää yrittää pelastua, hänelle annetaan tehtävän ratkaistettavaksi(tehty)
+
+1. Jos Pelaaja ratkaisee tehtävän oikein, hän voi jatkaa pelaamista tai lähteä pelistä (tehty)
+
+2. Jos Pelaaja ratkaisee tehtävän väärin, hän kuolee (tehty)
 
 - Luolia voi olla valittavissa joskus kolme kahden sijaan. Kolmas luola voi viedä vesiputoukseen, jossa ei ole lohikäärmettä, eikä aarteita
 
-- Jos pelaaja päättää lopettaa pelin tai tulee syödyksi, hänen nimimerkki ja tähän mennessä kerättyjen aarteiden määrä tallennetaan parhaiden tulosten taulukkoon.
+- Jos pelaaja päättää lopettaa pelin tai tulee kuolee, hänelle ennen lähtöä ehdotetaan kirjoittaa nimensä pelaajien tietokantaan (tehty)
+
+- Pelaaja voi hakea muiden pelaajien suorituksia tietokannasta(tehty)

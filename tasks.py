@@ -20,3 +20,11 @@ def coverage_report(ctx):
 @task
 def lint(ctx):
     ctx.run("pylint src")
+
+@task
+def build(ctx):
+    ctx.run("python3 src/build.py")
+
+@task
+def lint(ctx):
+    ctx.run("pylint src")

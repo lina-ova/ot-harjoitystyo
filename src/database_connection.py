@@ -8,3 +8,4 @@ connection = sqlite3.connect(os.path.join(dirname, 'data',"data.sqlite"))
 
 def get_database_connection():
     return connection
+    

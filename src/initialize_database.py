@@ -1,6 +1,9 @@
 from database_connection import get_database_connection
 
 def drop_tables(connection):
+    """Poistaa tietokantataulut.
+    Args:
+        connection: Tietokantayhteyden Connection-olio"""
     cursor = connection.cursor()
 
     cursor.execute('''
@@ -12,31 +15,30 @@ def drop_tables(connection):
     connection.commit()
 
 
-def create_riddles(connection):
+def create_tables(connection):
+    """Luo tietokantataulut.
+    Args:
+        connection: Tietokantayhteyden Connection-olio
+    """
+
     cursor = connection.cursor()
 
-    with open('data/riddles.sql', 'r') as riddles_file:
+    with open('src/data/riddles.sql', mode='r', encoding='utf-8') as riddles_file:
         sql_scrip=riddles_file.read()
     cursor.executescript(sql_scrip)
-
-    connection.commit()
-
-def create_history(connection):
-    cursor=connection.cursor()
-    with open('data/hunters.sql', 'r') as hunters_file:
+    with open('src/data/hunters.sql', mode='r', encoding='utf-8') as hunters_file:
         sql_sqript=hunters_file.read()
     cursor.executescript(sql_sqript)
     connection.commit()
 
 
-
 def initialize_database():
+    """Alustaa tietokantataulut.
+    """
     connection = get_database_connection()
 
     drop_tables(connection)
-    create_riddles(connection)
-    create_history(connection)
-
+    create_tables(connection)
 
 if __name__ == "__main__":
     initialize_database()

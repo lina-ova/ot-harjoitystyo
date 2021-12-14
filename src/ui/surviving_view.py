@@ -1,44 +1,53 @@
 from tkinter import *
 from define.survivetask import SurviveTask
 
-class Surviving1:
-    def __init__(self, root, treasure, change, survive_digest):
+class Surviving:
+    def __init__(self, root, survive_digest):
+        """Luokka joka vastaa näkymästä, kun pelaaja on tullut syödyksi ja yrittää pelastua suorittamalla tehtävän
+
+        Args:
+            root ([tk()]): [tk-olio, vastaa siitä että pelaaja näkee näkymän]
+            survive_digest ([funktio]): [kutsuu näkymän, jota näytetään seuraavaksi]
+        """
         self._root=root
-        self._treasure=treasure
-        self._change=change
         self._open_survive_digest=survive_digest
         self._riddle=None
         self._answer=None
         self._get_task()
         self._frame= None
         self._users=StringVar()
-        self._bg=PhotoImage(file='background/survivng.png')
+        self._bg=PhotoImage(file='src/background/survivng.png')
 
         self._initialize()
 
 
     def _get_task(self):
+        """Funktio, joka luo luokan, joka määritää tehtävänannon ja vastauksen
+        """
         task=SurviveTask()
         self._riddle=task.riddle()
         self._answer=task.answer()
 
     def pack(self):
+        """Funktio joka kasaa näkymän näytölle"""
         self._frame.pack(fill=BOTH, side=LEFT, expand=True)
 
     def destroy(self):
+        """Funktio, joka tuhoaa näkymän"""
         self._frame.destroy()
 
     def check(self):
+        """Funktio, joka tarkistaa, vastaako pelaajan vastaus oikeaa vai ei ja käskee avaaman seuraa näkymä sen mukaan
+        """
         users=self._users.get()
         if users==self._answer:
             self._open_survive_digest('survive')
         else:
-            loss=self._treasure
-            self._change(loss)
             self._open_survive_digest('digest', self._answer)
-            print('2')
 
     def _initialize(self):
+        """Funktio, joka kokoaa kaikki asettaa kaikki näkymä
+        """
         self._frame = Frame(master=self._root)
 
         bg_label=Label(self._frame, image=self._bg)
