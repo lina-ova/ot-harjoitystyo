@@ -1,0 +1,7 @@
+[TaskView](https://mylafox.tumblr.com/post/140416498713/one-hour-enviro-concept-sketch-from-today-this)
+[WinView](https://www.artstation.com/artwork/LREGP)
+[LoseView](https://www.artstation.com/artwork/LREGP)
+[GlobbledView](https://www.artstation.com/artwork/LAEm5)
+[SurvivedView](https://www.pinterest.ru/pin/71353975332151682/)
+[WriteNameView](https://www.finebooksmagazine.com/blog/private-lives-old-books-opens-bryn-mawr)
+[Book of Hunters](https://www.finebooksmagazine.com/blog/private-lives-old-books-opens-bryn-mawr)
