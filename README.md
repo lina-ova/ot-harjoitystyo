@@ -10,7 +10,7 @@ Sovellus on yhden pelaajan peli. Sovellus on Lohikäärmien maailma peli. Täss�
 
 [Arkitehtuurikuvaus](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/arkitehtuuri.md)
 
-[Testausdokumentti]()
+[Testausdokumentti](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/testikattavuus.md)
 
 [Tuntikirjanpito](https://github.com/lina-ova/ot-harjoitystyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
