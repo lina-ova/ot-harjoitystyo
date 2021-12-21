@@ -25,6 +25,4 @@ def lint(ctx):
 def build(ctx):
     ctx.run("python3 src/build.py")
 
-@task
-def lint(ctx):
-    ctx.run("pylint src")
+

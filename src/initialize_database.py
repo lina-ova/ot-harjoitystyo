@@ -23,10 +23,10 @@ def create_tables(connection):
 
     cursor = connection.cursor()
 
-    with open('src/data/riddles.sql', mode='r', encoding='utf-8') as riddles_file:
+    with open('src/database/riddles.sql', mode='r', encoding='utf-8') as riddles_file:
         sql_scrip=riddles_file.read()
     cursor.executescript(sql_scrip)
-    with open('src/data/hunters.sql', mode='r', encoding='utf-8') as hunters_file:
+    with open('src/database/hunters.sql', mode='r', encoding='utf-8') as hunters_file:
         sql_sqript=hunters_file.read()
     cursor.executescript(sql_sqript)
     connection.commit()

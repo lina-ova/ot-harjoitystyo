@@ -22,7 +22,7 @@ class DefineResult:
                 valitun tuloksen"""
 
         results=['win', 'die', 'lose']
-        probability=[5,1,3]
+        probability=[0,1,0]
         result=choices(results,weights=probability)[0]
         return result
 

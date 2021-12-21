@@ -24,9 +24,9 @@ class Surviving:
     def _get_task(self):
         """Funktio, joka luo luokan, joka määritää tehtävänannon ja vastauksen
         """
-        task=SurviveTask()
-        self._riddle=task.riddle()
-        self._answer=task.answer()
+        self.task=SurviveTask()
+        self._riddle=self.task.riddle()
+        self._answer=self.task.answer()
 
     def pack(self):
         """Funktio joka kasaa näkymän näytölle"""
@@ -40,10 +40,9 @@ class Surviving:
         """Funktio, joka tarkistaa, vastaako pelaajan vastaus oikeaa vai ei ja käskee avaaman seuraa näkymä sen mukaan
         """
         users=self._users.get()
-        if users==self._answer:
-            self._open_survive_digest('survive')
-        else:
-            self._open_survive_digest('digest', self._answer)
+        check=self.task.check_user_answer(self._answer,users)
+        self._open_survive_digest(check, self._answer)
+
 
     def _initialize(self):
         """Funktio, joka kokoaa kaikki asettaa kaikki näkymä

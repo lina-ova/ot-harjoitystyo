@@ -52,3 +52,8 @@ class SurviveTask:
         Returns:
             tehtävänvastaus"""
         return self._answer
+
+    def check_user_answer(self,correct, users):
+        if users==correct:
+            return 'survive'
+        return 'digest'
