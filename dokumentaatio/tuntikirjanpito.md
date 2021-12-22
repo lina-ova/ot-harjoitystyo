@@ -10,4 +10,5 @@
 |12.12|7|näkymät History ja oman tietojen tallentaminen, Lisätty mahdollisuus nähdä muiden suorituksia, tallentaa oma suoritus, hakea tietoja tietokannasta, tarkistaa pelaajan vastaus|
 |13.12|5|Lisätty tasutakuvia, pylint arvosanaa nostetu, docstring aloitettu, vaatimusmaarittely dokumentti muokattu|
 |14.12|5| Käyttöohjedokumentti dokumentti kirjoitettu, Readme dokumentti muokattu, release tehty|
-|yht|31||
+|21.12|4|Dokumentaation viimeistely|
+|yht|35||
