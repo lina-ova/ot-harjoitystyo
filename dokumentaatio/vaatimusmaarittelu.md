@@ -12,10 +12,6 @@ Pelaaja lähestyy kahta luolaa, joista toisessa on ystävällinen lohikäärme j
 
 Peli loppuu, kun pelaaja tulee syötyksi, tai kun pelaaja itse päättää lopettaa pelin
 
-## Käyttöliittymä luonnos
-
-Sovellus aukeaa **Aloita peli** näkymään josta pelaaja voi aloittaa pelin
-
 ## Perusversion tarjoama toiminnallisuus
 
 - Pelaaja voi aloittaa pelin (tehty)
@@ -42,9 +38,9 @@ Perusversion jälkeen peli täydennetään esim seuraavilla toiminnallisuuksilla
 
 - Jos pelaaja päättää yrittää pelastua, hänelle annetaan tehtävän ratkaistettavaksi(tehty)
 
-1. Jos Pelaaja ratkaisee tehtävän oikein, hän voi jatkaa pelaamista tai lähteä pelistä (tehty)
+- Jos Pelaaja ratkaisee tehtävän oikein, hän voi jatkaa pelaamista tai lähteä pelistä (tehty)
 
-2. Jos Pelaaja ratkaisee tehtävän väärin, hän kuolee (tehty)
+- Jos Pelaaja ratkaisee tehtävän väärin, hän kuolee (tehty)
 
 - Luolia voi olla valittavissa joskus kolme kahden sijaan. Kolmas luola voi viedä vesiputoukseen, jossa ei ole lohikäärmettä, eikä aarteita
 
