@@ -8,5 +8,10 @@ connection = sqlite3.connect(DATABASE_FILE_PATH)
 
 
 def get_database_connection():
+    """Funktio, joka luo yhteyden tietokantaan
+
+    Returns:
+        [variable]: [connection to database]
+    """
     return connection
     

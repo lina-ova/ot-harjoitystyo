@@ -1,4 +1,4 @@
-from tkinter import *
+
 from ui.hello_view import HelloView
 from ui.play import PlayView
 from ui.surviving_view import Surviving

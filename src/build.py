@@ -2,6 +2,10 @@ from initialize_database import initialize_database
 
 
 def build():
+
+    """Funktio, joka kutsuu toista fuktiota laustakseen tietokannat
+    """
+
     initialize_database()
 
 
